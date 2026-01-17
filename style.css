@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+main{
+    padding: 50px 0;
+}
+footer,
+header{
+    background-color: #3b4058;
+    height: 50px;
+}
+header img{
+    height: 40px;
+    margin: 5px 0 0 20px;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: #4b1139;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+h2{
+    color: #2a6e78;
+    font-size: 25;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+}
+fieldset legend{
+    font-size: 18px;
+    font-weight: 500;
+    color: #4b1139;
+    padding: 0 10px;
+}
+fieldset{
+    border: 1px solid #2a6e78;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+label{
+    font-size: 16px;
+    color: #4b1139;
+    font-weight: 100;
+}
+input{
+    border: 1px solid #7a907c;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.first{
+    width: 48%;
+    float: left;
+}
+.last{
+    width: 48%;
+    float: right;
+}
+input[type="radio"]:checked,
+input[type="checkbox"]:checked{
+    background: #7a907c;
+}
+input[type="radio"]{
+    border-radius: 20px!important;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #7a907c;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    margin: 0 0 0 5px;
+}
+.professional label{
+    width: 70px;
+}
+.professional ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.professional ul li{
+    list-style: none;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.concent textarea,
+.professional textarea{
+    width: 100%;
+    margin: 0 0 15px 0;
+    border: 1px solid #7a907c;
+    font-size: 16px;
+    padding: 5px;
+}
+.datas select{
+    display: block;
+    width: 200px;
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid #7a907c;  
+    margin-bottom: 15px;
+}
+.datas ul{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.datas ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+input#accept{
+    margin-bottom: 0;
+}

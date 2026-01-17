@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas de Emprego</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/375/375112.png" alt="logo">
+    </header>
+    <main class="content">
+        <h1>Vagas de Emprego</h1>
+        <h2>Aqui a oportunidade chega até você!</h2>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="first">
+                    <label for="name">Nome</label>
+                    <input id="name" type="text" name="data_name" required>
+                    <label for="email" >E-mail</label>
+                    <input type="email" name="data_email" id="email" required>
+                </div>
+                <div class="last">
+                    <label for="lastname">Sobrenome</label>
+                    <input type="text" name="data_lastname" id="lastname" required>
+                    <label for="pass">Senha Acompanhamento</label>
+                    <input type="text" name="data_pass" id="pass" required>
+                </div>
+                <label for="phone">Telefone/Celular</label>
+                <input type="tel" name="data_phone" id="phone" required>
+            </fieldset>
+            <fieldset class="professional">
+                <legend>Dados Profissionais</legend>
+                <label>Áreas que possui conhecimento</label>
+                <ul>
+                    <li>
+                        <label for="javascript">javascript</label>
+                        <input type="checkbox" name="data_experience[]" value="javascipt" id="javascript">
+                    </li>
+                    <li>
+                        <label for="php">PHP</label>
+                        <input type="checkbox" name="data_experience[]" value="php" id="php">
+                    </li>
+                    <li>
+                        <label for="python">Python</label>
+                        <input type="checkbox" name="data_experience[]" value="python" id="python">
+                    </li>
+                    <li>
+                        <label for="C++">C++</label>
+                        <input type="checkbox" name="data_experience[]" value="c++" id="C++">
+                    </li>
+                    <li>
+                        <label for="others">Outros</label>
+                        <input type="checkbox" name="data_experience[]" value="other" id="other">
+                    </li>
+                </ul>
+                <label for="tell">Conte-nos um pouco sobre seus conhecimentos:</label>
+                <textarea name="data_history" id="tell" cols="30" rows="10" required></textarea>
+                <label for="paper">Envie seu Currículo</label>
+                <input type="file" name="data_paper" id="paper">
+            </fieldset>
+            <fieldset class="datas">
+                <legend>Dados da Vaga</legend>
+                <label for="charge">Cargo de Interesse</label>
+                <select name="data_charge" id="charge">
+                    <option value="">Selecione</option>
+                    <option value="estagio">Estágio</option>
+                    <option value="junior">Dev Júnior</option>
+                    <option value="senior">Dev Sênior</option>
+                    <option value="full">Dev Fullstack</option>
+                </select>
+                <label for="salary">Pretensão Salarial</label>
+                <ul>
+                    <li>
+                        <label for="data_salary_1">R$1.500,00</label>
+                        <input type="radio" name="data_salary" id="data_salary_1">
+                    </li>
+                    <li>
+                        <label for="data_salary_2">R$2.500,00</label>
+                        <input type="radio" name="data_salary" id="data_salary_2">
+                    </li>
+                    <li>
+                        <label for="data_salary_3">R$3.500,00</label>
+                        <input type="radio" name="data_salary" id="data_salary_3">
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="concent">
+                <textarea name="data_terms" id="terms" cols="30" rows="10" readonly>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quasi, neque enim expedita, eligendi modi cumque sed reiciendis ipsum magni voluptatum dolorum ducimus nihil laudantium eveniet commodi voluptates nostrum tenetur.
+                </textarea>
+                <label for="accept">Li e aceito os termos de uso</label>
+                <input type="checkbox" name="data_accept" id="accept" required>
+            </div>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
